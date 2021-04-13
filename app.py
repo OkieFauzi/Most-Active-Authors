@@ -14,7 +14,6 @@ def active_authors(treshold):
         if data['submission_count'] > treshold:
             count = data['username']
             submission_count.append(count)
-    print(submission_count)
+    return submission_count
 
-active_authors(100)
-
+print(active_authors(10))
